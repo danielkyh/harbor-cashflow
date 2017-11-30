@@ -1,0 +1,502 @@
+[
+  {
+    "start_date": "2017-08-31",
+    "end_date": "2017-12-31",
+    "total": 26250,
+    "sources": {
+      "user_work": 26250,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2018-01-01",
+    "end_date": "2018-12-31",
+    "total": 64260,
+    "sources": {
+      "user_work": 64260,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2019-01-01",
+    "end_date": "2019-12-31",
+    "total": 65545.2,
+    "sources": {
+      "user_work": 65545.2,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2020-01-01",
+    "end_date": "2020-12-31",
+    "total": 66856.104,
+    "sources": {
+      "user_work": 66856.104,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2021-01-01",
+    "end_date": "2021-12-31",
+    "total": 68193.22608,
+    "sources": {
+      "user_work": 68193.22608,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2022-01-01",
+    "end_date": "2022-12-31",
+    "total": 69557.0906016,
+    "sources": {
+      "user_work": 69557.0906016,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2023-01-01",
+    "end_date": "2023-12-31",
+    "total": 70948.232413632,
+    "sources": {
+      "user_work": 70948.232413632,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2024-01-01",
+    "end_date": "2024-12-31",
+    "total": 72367.197061905,
+    "sources": {
+      "user_work": 72367.197061905,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2025-01-01",
+    "end_date": "2025-12-31",
+    "total": 73814.541003143,
+    "sources": {
+      "user_work": 73814.541003143,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2026-01-01",
+    "end_date": "2026-12-31",
+    "total": 75290.831823206,
+    "sources": {
+      "user_work": 75290.831823206,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2027-01-01",
+    "end_date": "2027-12-31",
+    "total": 76796.64845967,
+    "sources": {
+      "user_work": 76796.64845967,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2028-01-01",
+    "end_date": "2028-12-31",
+    "total": 78332.581428863,
+    "sources": {
+      "user_work": 78332.581428863,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2029-01-01",
+    "end_date": "2029-12-31",
+    "total": 79899.23305744,
+    "sources": {
+      "user_work": 79899.23305744,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2030-01-01",
+    "end_date": "2030-12-31",
+    "total": 81497.217718589,
+    "sources": {
+      "user_work": 81497.217718589,
+      "user_social_security": 0,
+      "asset_income": 0
+    }
+  },
+  {
+    "start_date": "2031-01-01",
+    "end_date": "2031-12-31",
+    "total": 53780.898799432,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 24000,
+      "asset_income": 29780.898799432
+    }
+  },
+  {
+    "start_date": "2032-01-01",
+    "end_date": "2032-12-31",
+    "total": 54856.516775421,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 24480,
+      "asset_income": 30376.516775421
+    }
+  },
+  {
+    "start_date": "2033-01-01",
+    "end_date": "2033-12-31",
+    "total": 55953.647110929,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 24969.6,
+      "asset_income": 30984.047110929
+    }
+  },
+  {
+    "start_date": "2034-01-01",
+    "end_date": "2034-12-31",
+    "total": 57072.720053148,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 25468.992,
+      "asset_income": 31603.728053148
+    }
+  },
+  {
+    "start_date": "2035-01-01",
+    "end_date": "2035-12-31",
+    "total": 58214.174454211,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 25978.37184,
+      "asset_income": 32235.802614211
+    }
+  },
+  {
+    "start_date": "2036-01-01",
+    "end_date": "2036-12-31",
+    "total": 59378.457943295,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 26497.9392768,
+      "asset_income": 32880.518666495
+    }
+  },
+  {
+    "start_date": "2037-01-01",
+    "end_date": "2037-12-31",
+    "total": 60566.027102161,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 27027.898062336,
+      "asset_income": 33538.129039825
+    }
+  },
+  {
+    "start_date": "2038-01-01",
+    "end_date": "2038-12-31",
+    "total": 61777.347644204,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 27568.456023583,
+      "asset_income": 34208.891620621
+    }
+  },
+  {
+    "start_date": "2039-01-01",
+    "end_date": "2039-12-31",
+    "total": 63012.894597088,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 28119.825144054,
+      "asset_income": 34893.069453034
+    }
+  },
+  {
+    "start_date": "2040-01-01",
+    "end_date": "2040-12-31",
+    "total": 64273.15248903,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 28682.221646935,
+      "asset_income": 35590.930842095
+    }
+  },
+  {
+    "start_date": "2041-01-01",
+    "end_date": "2041-12-31",
+    "total": 65558.615538811,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 29255.866079874,
+      "asset_income": 36302.749458936
+    }
+  },
+  {
+    "start_date": "2042-01-01",
+    "end_date": "2042-12-31",
+    "total": 66869.787849587,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 29840.983401472,
+      "asset_income": 37028.804448115
+    }
+  },
+  {
+    "start_date": "2043-01-01",
+    "end_date": "2043-12-31",
+    "total": 68207.183606579,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 30437.803069501,
+      "asset_income": 37769.380537078
+    }
+  },
+  {
+    "start_date": "2044-01-01",
+    "end_date": "2044-12-31",
+    "total": 69571.32727871,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 31046.559130891,
+      "asset_income": 38524.768147819
+    }
+  },
+  {
+    "start_date": "2045-01-01",
+    "end_date": "2045-12-31",
+    "total": 70962.753824284,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 31667.490313509,
+      "asset_income": 39295.263510775
+    }
+  },
+  {
+    "start_date": "2046-01-01",
+    "end_date": "2046-12-31",
+    "total": 72382.00890077,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 32300.840119779,
+      "asset_income": 40081.168780991
+    }
+  },
+  {
+    "start_date": "2047-01-01",
+    "end_date": "2047-12-31",
+    "total": 73829.649078785,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 32946.856922175,
+      "asset_income": 40882.792156611
+    }
+  },
+  {
+    "start_date": "2048-01-01",
+    "end_date": "2048-12-31",
+    "total": 75306.242060361,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 33605.794060618,
+      "asset_income": 41700.447999743
+    }
+  },
+  {
+    "start_date": "2049-01-01",
+    "end_date": "2049-12-31",
+    "total": 76812.366901568,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 34277.909941831,
+      "asset_income": 42534.456959738
+    }
+  },
+  {
+    "start_date": "2050-01-01",
+    "end_date": "2050-12-31",
+    "total": 78348.6142396,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 34963.468140667,
+      "asset_income": 43385.146098933
+    }
+  },
+  {
+    "start_date": "2051-01-01",
+    "end_date": "2051-12-31",
+    "total": 79915.586524392,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 35662.737503481,
+      "asset_income": 44252.849020911
+    }
+  },
+  {
+    "start_date": "2052-01-01",
+    "end_date": "2052-12-31",
+    "total": 81513.89825488,
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 36375.99225355,
+      "asset_income": 45137.90600133
+    }
+  },
+  {
+    "start_date": "2053-01-01",
+    "end_date": "2053-12-31",
+    "total": "48979.288128960149",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 37103.512098621,
+      "asset_income": "11875.77603033902"
+    }
+  },
+  {
+    "start_date": "2054-01-01",
+    "end_date": "2054-12-31",
+    "total": "37845.582340593564",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 37845.582340594,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2055-01-01",
+    "end_date": "2055-12-31",
+    "total": "38602.493987405436",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 38602.493987405,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2056-01-01",
+    "end_date": "2056-12-31",
+    "total": "39374.543867153544",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 39374.543867154,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2057-01-01",
+    "end_date": "2057-12-31",
+    "total": "40162.034744496612",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 40162.034744497,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2058-01-01",
+    "end_date": "2058-12-31",
+    "total": "40965.275439386544",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 40965.275439387,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2059-01-01",
+    "end_date": "2059-12-31",
+    "total": "41784.580948174272",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 41784.580948174,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2060-01-01",
+    "end_date": "2060-12-31",
+    "total": "42620.272567137756",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 42620.272567138,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2061-01-01",
+    "end_date": "2061-12-31",
+    "total": "43472.678018480508",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 43472.678018481,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2062-01-01",
+    "end_date": "2062-12-31",
+    "total": "44342.131578850128",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 44342.13157885,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2063-01-01",
+    "end_date": "2063-12-31",
+    "total": "45228.974210427132",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 45228.974210427,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2064-01-01",
+    "end_date": "2064-12-31",
+    "total": "46133.553694635672",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 46133.553694636,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2065-01-01",
+    "end_date": "2065-12-31",
+    "total": "47056.224768528384",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 47056.224768528,
+      "asset_income": "0.0"
+    }
+  },
+  {
+    "start_date": "2066-01-01",
+    "end_date": "2066-12-31",
+    "total": "47997.349263898956",
+    "sources": {
+      "user_work": 0,
+      "user_social_security": 47997.349263899,
+      "asset_income": "0.0"
+    }
+  }
+]
