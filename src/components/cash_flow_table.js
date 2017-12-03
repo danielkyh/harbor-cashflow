@@ -3,6 +3,7 @@ import Table, { TableBody, TableCell, TableHead, TableRow, TableFooter, TablePag
 import { withStyles } from 'material-ui/styles';
 import { red, blueGrey } from 'material-ui/colors'
 import { CalculateTax } from '../services/tax_calculator'
+import { CalculateCombinedIncome, FormatMoney, CalculateNetIncome } from '../services/data_helper'
 
 const styles = {
   taxAmount: {
@@ -42,7 +43,9 @@ class CashFlowTable extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({cashFlows: nextProps.cashFlows, userBirthday: nextProps.userBirthday, spouseBirthday: nextProps.spouseBirthday})
+    this.setState({cashFlows: nextProps.cashFlows,
+                   userBirthday: nextProps.userBirthday,
+                   spouseBirthday: nextProps.spouseBirthday})
   }
 
   handleChangePage = (event, page) => {
@@ -67,24 +70,6 @@ class CashFlowTable extends Component {
     return this.pageinatedData().map( (cashFlow, idx) => {
       return <TableCell className={this.props.classes.tableHeader} key={idx} numeric>{this.getYearFromDate(cashFlow.end_date)}</TableCell>
     })
-  }
-
-  calculateCombinedIncome(cashFlow) {
-    if(this.props.joint){
-      return parseFloat(cashFlow.sources.user_work) + parseFloat(cashFlow.sources.asset_income) + parseFloat(cashFlow.sources.user_social_security) + parseFloat(cashFlow.sources.spouse_work) +parseFloat(cashFlow.sources.spouse_social_security);
-    } else {
-        return parseFloat(cashFlow.sources.user_work) + parseFloat(cashFlow.sources.asset_income) + parseFloat(cashFlow.sources.user_social_security);
-    }
-
-  }
-
-  formatMoney(amount){
-    let roundedAmount = parseFloat(amount).toFixed(2);
-    return `$ ${parseFloat(roundedAmount).toLocaleString(undefined, { minimumFractionDigits: 2 })}`;
-  }
-
-  calculateNetIncome(cashFlow) {
-    return this.calculateCombinedIncome(cashFlow) - CalculateTax(this.calculateCombinedIncome(cashFlow), this.props.joint);
   }
 
   buildAgeRow(birthday, label) {
@@ -117,7 +102,7 @@ class CashFlowTable extends Component {
             <TableCell>My Income</TableCell>
             { this.pageinatedData().map((cashFlow, idx) => {
                 return <TableCell key={`work-${idx}`} numeric>
-                  {this.formatMoney(cashFlow.sources.user_work)}
+                  {FormatMoney(cashFlow.sources.user_work)}
                 </TableCell>
               }) }
           </TableRow>,
@@ -125,7 +110,7 @@ class CashFlowTable extends Component {
             <TableCell>Spouse's Income</TableCell>
             { this.pageinatedData().map((cashFlow, idx) => {
                 return <TableCell key={`work-${idx}`} numeric>
-                  {this.formatMoney(cashFlow.sources.spouse_work)}
+                  {FormatMoney(cashFlow.sources.spouse_work)}
                 </TableCell>
               }) }
           </TableRow>,
@@ -133,7 +118,7 @@ class CashFlowTable extends Component {
             <TableCell className={this.props.classes.subtotal}>Income from Work</TableCell>
             { this.pageinatedData().map((cashFlow, idx) => {
                 return <TableCell className={this.props.classes.subtotal} key={`work-${idx}`} numeric>
-                  {this.formatMoney(cashFlow.sources.user_work + cashFlow.sources.spouse_work)}
+                  {FormatMoney(cashFlow.sources.user_work + cashFlow.sources.spouse_work)}
                 </TableCell>
               }) }
           </TableRow>
@@ -144,7 +129,7 @@ class CashFlowTable extends Component {
             <TableCell>Income from Work</TableCell>
             { this.pageinatedData().map((cashFlow, idx) => {
                 return <TableCell key={`work-${idx}`} numeric>
-                  {this.formatMoney(cashFlow.sources.user_work)}
+                  {FormatMoney(cashFlow.sources.user_work)}
                 </TableCell>
               }) }
           </TableRow>
@@ -159,7 +144,7 @@ class CashFlowTable extends Component {
           <TableCell>My Social Security</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell key={`ss-${idx}`} numeric>
-                {this.formatMoney(cashFlow.sources.user_social_security)}
+                {FormatMoney(cashFlow.sources.user_social_security)}
               </TableCell>
             }) }
         </TableRow>,
@@ -167,7 +152,7 @@ class CashFlowTable extends Component {
           <TableCell>Spouse's Social Security</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell key={`ss-${idx}`} numeric>
-                {this.formatMoney(cashFlow.sources.spouse_social_security)}
+                {FormatMoney(cashFlow.sources.spouse_social_security)}
               </TableCell>
             }) }
         </TableRow>,
@@ -175,7 +160,7 @@ class CashFlowTable extends Component {
           <TableCell className={this.props.classes.subtotal}>Social Security</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell className={this.props.classes.subtotal} key={`ss-${idx}`} numeric>
-                {this.formatMoney(cashFlow.sources.user_social_security + cashFlow.sources.spouse_social_security)}
+                {FormatMoney(cashFlow.sources.user_social_security + cashFlow.sources.spouse_social_security)}
               </TableCell>
             }) }
         </TableRow>
@@ -186,7 +171,7 @@ class CashFlowTable extends Component {
           <TableCell>Social Security</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell key={`ss-${idx}`} numeric>
-                {this.formatMoney(cashFlow.sources.user_social_security)}
+                {FormatMoney(cashFlow.sources.user_social_security)}
               </TableCell>
             }) }
         </TableRow>
@@ -203,7 +188,7 @@ class CashFlowTable extends Component {
           <TableCell>Retirement Savings Withdrawals</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell key={`retirement-${idx}`} numeric>
-                {this.formatMoney(cashFlow.sources.asset_income)}
+                {FormatMoney(cashFlow.sources.asset_income)}
               </TableCell>
             }) }
         </TableRow>
@@ -211,7 +196,7 @@ class CashFlowTable extends Component {
           <TableCell className={this.props.classes.subtotal}>Combined Income</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell className={this.props.classes.subtotal} key={`combined-income-${idx}`} numeric>
-                {this.formatMoney(this.calculateCombinedIncome(cashFlow))}
+                {FormatMoney(CalculateCombinedIncome(cashFlow, this.props.joint))}
               </TableCell>
             }) }
         </TableRow>
@@ -219,7 +204,7 @@ class CashFlowTable extends Component {
           <TableCell>Taxes(Est.)</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell className={this.props.classes.taxAmount} key={`taxes-${idx}`} numeric>
-                - {this.formatMoney(CalculateTax(this.calculateCombinedIncome(cashFlow), this.props.joint))}
+                - {FormatMoney(CalculateTax(CalculateCombinedIncome(cashFlow, this.props.joint), this.props.joint))}
               </TableCell>
             }) }
         </TableRow>
@@ -227,7 +212,7 @@ class CashFlowTable extends Component {
           <TableCell className={this.props.classes.netIncome}>After-Tax Income</TableCell>
           { this.pageinatedData().map((cashFlow, idx) => {
               return <TableCell className={this.props.classes.netIncome} key={`after-taxes-${idx}`} numeric>
-                {this.formatMoney(this.calculateNetIncome(cashFlow))}
+                {FormatMoney(CalculateNetIncome(cashFlow))}
               </TableCell>
             }) }
         </TableRow>
